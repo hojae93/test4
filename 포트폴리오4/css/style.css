@@ -1,0 +1,193 @@
+@charset "utf-8";
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Pretendard, 'Noto Sans KR', sans-serif;
+}
+
+body {
+  background-color: #fff;
+  color: #333;
+}
+
+ul {
+  list-style: none;
+}
+
+:root {
+  --padding: 0 10%;
+  --margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+
+/* ===== 전체 레이아웃 ===== */
+#container {
+  width: 100%;
+}
+
+header {
+  height: 40px;
+  background-color: black;
+  display: flex;
+  color: #fff;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--padding);
+}
+
+#main {
+  width: 100%;
+  height: 900px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/hotel.jpg);
+  background-position: 20%;
+  position: relative;
+}
+
+#sub {
+  width: 100%;
+  height: 600px;
+  background-color: #f0f0f0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+#etc {
+  height: 600px;
+  background-color: #191616;
+  display: flex;
+  justify-content: space-around;
+  padding: 2% 10%;
+  align-items: center;
+}
+
+footer {
+  height: 300px;
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--padding);
+  color: #fff;
+}
+
+/* ===== 헤더 ===== */
+header .logo {
+  width: 10%;
+}
+
+header .logo img {
+  margin-top: 5px;
+}
+
+header nav {
+  width: 30%;
+}
+
+header .menu {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* ===== 메인 ===== */
+#main {
+  margin: var(--margin);
+  text-align: center;
+}
+
+#main .main-container {
+  position: absolute;
+  top: 30%;
+  left: 20%;
+  width: 60%;
+  height: 500px;
+}
+
+#main .main-text {
+  height: 200px;
+  font-size: 80px;
+  font-weight: 900;
+  color: #fff;
+}
+
+#main .main-button button {
+  padding: 10px 30px;
+  border-radius: 30px;
+  border: none;
+  background: #fff;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+/* ===== 서브 ===== */
+.split>span {
+  display: inline-block;
+}
+
+#sub .sub-1 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(../images/pool.jpg);
+  width: 100%;
+  height: 100%;
+  background-position: 20%;
+}
+
+#sub .sub-1 .parallax__item__desc,
+#sub .sub-2 .parallax__item__desc,
+#sub .sub-3 .parallax__item__desc {
+  position: absolute;
+  top: 40%;
+  left: 45%;
+  color: #fff;
+  font-size: 100px;
+  font-weight: 900;
+}
+
+#sub .sub-1:hover {
+  opacity: 0.8;
+}
+
+#sub .sub-2 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../images/food1.jpg);
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#sub .sub-2:hover {
+  opacity: 0.8;
+}
+
+#sub .sub-3 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../images/event2.jpg);
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#sub .sub-3:hover {
+  opacity: 0.8;
+}
+
+
+
+
+/* ===== 푸터 ===== */
+footer .foot1 {
+  width: 55%;
+  height: 230px;
+}
+
+footer .foot2 {
+  width: 35%;
+  height: 230px;
+}
